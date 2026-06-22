@@ -21,23 +21,23 @@ export default function Footer() {
         <div>
           <h3 className="mb-3 text-lg font-bold text-white">Contact</h3>
           <p className="text-sm">
-            <a href={`tel:${business.phones.primary}`} className="hover:text-brand">
+            <a href={`tel:${business.phones.primary}`} className="hover:text-brand-light">
               {business.phones.primary}
             </a>
           </p>
           <p className="text-sm">
-            <a href={`tel:${business.phones.secondary}`} className="hover:text-brand">
+            <a href={`tel:${business.phones.secondary}`} className="hover:text-brand-light">
               {business.phones.secondary}
             </a>
           </p>
           <p className="text-sm">
             Toll-free:{" "}
-            <a href={`tel:${business.phones.tollFree}`} className="hover:text-brand">
+            <a href={`tel:${business.phones.tollFree}`} className="hover:text-brand-light">
               {business.phones.tollFree}
             </a>
           </p>
           <p className="mt-2 text-sm">
-            <a href={`mailto:${business.email}`} className="hover:text-brand">
+            <a href={`mailto:${business.email}`} className="hover:text-brand-light">
               {business.email}
             </a>
           </p>
@@ -49,7 +49,7 @@ export default function Footer() {
           <ul className="space-y-1 text-sm">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-brand">
+                <Link href={link.href} className="hover:text-brand-light">
                   {link.label}
                 </Link>
               </li>

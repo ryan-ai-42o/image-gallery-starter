@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import Taxi from "../components/Icons/Taxi";
+import Logo from "../components/Icons/Logo";
 import { business } from "../utils/business";
 
 const features = [
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 
       <section className="bg-ink text-white">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-20 text-center">
-          <Taxi className="h-16 w-16 text-brand" />
+          <Logo className="h-16 w-16" />
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             {business.name} of Metairie
           </h1>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href={`tel:${business.phones.primary}`}
-              className="rounded-md bg-brand px-6 py-3 font-bold text-ink transition hover:bg-brand-dark"
+              className="rounded-md bg-brand px-6 py-3 font-bold text-white transition hover:bg-brand-dark"
             >
               Call {business.phones.primary}
             </a>

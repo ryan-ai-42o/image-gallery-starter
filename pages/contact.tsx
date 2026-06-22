@@ -123,7 +123,7 @@ const Contact: NextPage = () => {
           </div>
           <button
             type="submit"
-            className="rounded-md bg-brand px-6 py-3 font-bold text-ink transition hover:bg-brand-dark"
+            className="rounded-md bg-brand px-6 py-3 font-bold text-white transition hover:bg-brand-dark"
           >
             Send Message
           </button>

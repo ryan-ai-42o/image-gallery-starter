@@ -8,11 +8,11 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#FBC02D",
-          light: "#FFD54F",
-          dark: "#F9A825",
+          DEFAULT: "#1D4ED8",
+          light: "#60A5FA",
+          dark: "#1E3A8A",
         },
-        ink: "#1A1A1A",
+        ink: "#0F1B2D",
       },
     },
   },
