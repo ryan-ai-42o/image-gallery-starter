@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import Logo from "../components/Icons/Logo";
+import Wordmark from "../components/Icons/Wordmark";
 import { business } from "../utils/business";
 
 const features = [
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 
       <section className="bg-ink text-white">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-20 text-center">
-          <Logo className="h-16 w-16" />
+          <Wordmark className="h-20" />
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             {business.name} of Metairie
           </h1>

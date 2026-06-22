@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Logo from "./Icons/Logo";
+import Wordmark from "./Icons/Wordmark";
 import { business, navLinks } from "../utils/business";
 
 export default function Navbar() {
@@ -11,11 +11,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b bg-white text-ink shadow-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <Logo className="h-9 w-9" />
-          <span>
-            STAR <span className="text-brand">CABS</span>
-          </span>
+        <Link href="/" className="flex items-center">
+          <Wordmark className="h-10" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
