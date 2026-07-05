@@ -589,11 +589,13 @@ body.mode-expert .field-simple { display: none; }
   inset: 0;
   z-index: 100;
   background: rgba(10, 12, 16, 0.68);
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
 }
+
+.listen-overlay[hidden] { display: none; }
+.listen-overlay:not([hidden]) { display: flex; }
 
 .listen-panel {
   width: 100%;
