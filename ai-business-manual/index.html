@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Business Operating Manual — Technical &amp; Consulting Glossary</title>
+<meta name="description" content="A professional glossary and study reference covering AI, web development, automation, SEO, business, sales, cybersecurity, analytics, and digital consulting terminology.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%231b2430%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23e7b64f%22 font-family=%22Georgia,serif%22>M</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Toggle category navigation" aria-expanded="false" aria-controls="sidebar">
+      <span class="hamburger"></span>
+    </button>
+
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <div class="brand-text">
+        <span class="brand-title">AI Business Operating Manual</span>
+        <span class="brand-subtitle">Technical &amp; Consulting Glossary</span>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark or light mode" title="Toggle dark/light mode">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <div class="search-inner">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="search" id="search-input" placeholder="Search terms, definitions, categories, or related terms&hellip;" aria-label="Search glossary">
+      <span id="results-count" class="results-count" aria-live="polite"></span>
+    </div>
+  </div>
+</header>
+
+<div class="app-shell">
+
+  <!-- ======================= SIDEBAR ======================= -->
+  <aside id="sidebar" class="sidebar" aria-label="Category navigation">
+    <div class="sidebar-section">
+      <h2 class="sidebar-heading">Categories</h2>
+      <ul id="category-list" class="category-list">
+        <li><button class="category-btn is-active" data-category="all">All Categories</button></li>
+        <!-- populated by script.js -->
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h2 class="sidebar-heading">Study Progress</h2>
+      <div class="progress-widget">
+        <div class="progress-bar-track">
+          <div id="progress-bar-fill" class="progress-bar-fill" style="width:0%"></div>
+        </div>
+        <p id="progress-label" class="progress-label">0 of 0 terms studied</p>
+      </div>
+      <button id="show-favorites" class="text-btn">
+        <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+        <span id="favorites-count-label">Favorites (0)</span>
+      </button>
+    </div>
+
+    <div class="sidebar-section sidebar-tools">
+      <h2 class="sidebar-heading">Study Tools</h2>
+      <div class="mode-toggle-group" role="group" aria-label="Definition detail mode">
+        <button id="mode-plain" class="mode-btn" data-mode="plain">Plain English Only</button>
+        <button id="mode-expert" class="mode-btn" data-mode="expert">Expert Mode</button>
+        <button id="mode-full" class="mode-btn is-active" data-mode="full">Full Detail</button>
+      </div>
+      <button id="listen-mode-btn" class="text-btn">
+        <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        Listen Mode
+      </button>
+    </div>
+
+    <div class="sidebar-section sidebar-export">
+      <h2 class="sidebar-heading">Export</h2>
+      <button id="export-json" class="text-btn">Download Full Glossary (JSON)</button>
+      <button id="export-md" class="text-btn">Download Full Glossary (Markdown)</button>
+      <button id="export-favorites-btn" class="text-btn">Export Favorites</button>
+    </div>
+  </aside>
+
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <!-- ======================= MAIN CONTENT ======================= -->
+  <main id="main-content" class="main-content">
+
+    <div class="content-toolbar">
+      <p id="active-category-label" class="active-category-label">All Categories</p>
+      <div class="toolbar-buttons">
+        <button id="expand-all" class="chip-btn">Expand All</button>
+        <button id="collapse-all" class="chip-btn">Collapse All</button>
+      </div>
+    </div>
+
+    <section id="glossary-grid" class="glossary-grid" aria-live="polite">
+      <!-- glossary cards injected by script.js -->
+    </section>
+
+    <p id="empty-state" class="empty-state" hidden>No terms match your search. Try a different keyword or category.</p>
+  </main>
+</div>
+
+<!-- ======================= LISTEN MODE OVERLAY ======================= -->
+<div id="listen-overlay" class="listen-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="listen-term-title">
+  <div class="listen-panel">
+    <button id="listen-close" class="icon-btn listen-close" aria-label="Close listen mode">&times;</button>
+
+    <p class="listen-eyebrow">Listen Mode</p>
+    <h2 id="listen-term-title" class="listen-term-title">&nbsp;</h2>
+    <p id="listen-category" class="listen-category"></p>
+
+    <div id="listen-text" class="listen-text" tabindex="0"></div>
+
+    <div class="listen-controls">
+      <button id="listen-prev" class="control-btn" aria-label="Previous term">&larr; Prev</button>
+      <button id="listen-play" class="control-btn control-btn-primary" aria-label="Play or pause narration">&#9658; Play</button>
+      <button id="listen-stop" class="control-btn" aria-label="Stop narration">&#9632; Stop</button>
+      <button id="listen-next" class="control-btn" aria-label="Next term">Next &rarr;</button>
+    </div>
+
+    <div class="listen-settings">
+      <label for="listen-rate">Speech rate</label>
+      <input type="range" id="listen-rate" min="0.5" max="1.5" step="0.1" value="0.95">
+      <span id="listen-rate-label">0.95x</span>
+    </div>
+    <p class="listen-progress-label">Term <span id="listen-position">1</span> of <span id="listen-total">1</span></p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>AI Business Operating Manual &mdash; a static, offline-friendly study reference. Data lives entirely in <code>glossary.json</code>. No tracking, no external dependencies.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
