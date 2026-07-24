@@ -38,3 +38,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# instagram_niche_analyzer
+instagram_niche_analyzer/cache/
+instagram_niche_analyzer/output/
+instagram_niche_analyzer/accounts.txt
+instagram_niche_analyzer/.env
+__pycache__/
+*.pyc

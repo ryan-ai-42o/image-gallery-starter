@@ -1,0 +1,6 @@
+# One Instagram username per line -- Business/Creator accounts only.
+# business_discovery returns nothing for personal accounts.
+# Lines starting with # are ignored.
+nasa
+natgeo
+nike
