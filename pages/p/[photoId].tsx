@@ -49,6 +49,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const currentPhoto = reducedResults.find(
     (img) => img.id === Number(context.params.photoId),
   );
+
+  if (!currentPhoto) {
+    return { notFound: true };
+  }
+
   currentPhoto.blurDataUrl = await getBase64ImageUrl(currentPhoto);
 
   return {
