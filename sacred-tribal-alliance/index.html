@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sacred Tribal Alliance offers traditional Hapé and Sananga by inquiry only — sourced with integrity from Amazonian knowledge-holders, facilitated by Brennan Ledet.">
+  <link rel="canonical" href="https://sta26.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sacred Tribal Alliance">
+  <meta property="og:title" content="Sacred Tribal Alliance">
+  <meta property="og:description" content="Sacred Tribal Alliance offers traditional Hapé and Sananga by inquiry only — sourced with integrity from Amazonian knowledge-holders, facilitated by Brennan Ledet.">
+  <meta property="og:url" content="https://sta26.pages.dev/">
+
+  <title>Sacred Tribal Alliance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<!-- Age gate: starts hidden, inline script reveals if session not confirmed -->
+<div id="age-gate" hidden role="dialog" aria-modal="true" aria-labelledby="ag-heading">
+  <div class="ag-box">
+    <p class="ag-wordmark">Sacred Tribal Alliance</p>
+    <p class="ag-heading" id="ag-heading">This site is intended for adults 21 and older.</p>
+    <p class="ag-body">Some content relates to traditional plant medicines, including tobacco-containing preparations. Please confirm your age to continue.</p>
+    <div class="ag-actions">
+      <button id="ag-confirm">I am 21 or older — Continue</button>
+      <button id="ag-leave">Leave this site</button>
+    </div>
+    <p class="ag-fine-print">Confirming here is not legal age verification. Applicable laws require formal verification before any transaction — this is an open item in the checkout and legal review process.</p>
+  </div>
+</div>
+<script>(function(){try{if(sessionStorage.getItem('sta_age_ok'))return;}catch(e){}var g=document.getElementById('age-gate');g.removeAttribute('hidden');document.body.style.overflow='hidden';})();</script>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
+  <div class="site-nav-wrap">
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="site-logo">Sacred Tribal Alliance</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line x1="3" y1="6" x2="19" y2="6"/>
+          <line x1="3" y1="11" x2="19" y2="11"/>
+          <line x1="3" y1="16" x2="19" y2="16"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="medicines.html">Medicines</a></li>
+        <li><a href="sourcing.html">Sourcing</a></li>
+        <li><a href="reciprocity.html">Reciprocity</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="hero-photo-wrap">
+    <div class="hero">
+      <p class="eyebrow">Sacred Tribal Alliance</p>
+      <h1>Traditional medicines.<br>Fair access.<br>Respectful sourcing.</h1>
+      <p class="hero-lede">We work directly with Amazonian plant medicine traditions — connecting people to Hapé, Sananga, and other plant materials through honest conversation, careful sourcing, and genuine reciprocity with the communities these medicines come from.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+    <div class="hero-product-image">
+      <img src="assets/product-two-sizes.webp" alt="Sacred Tribal Alliance Hapé — small and large glass vials" loading="eager">
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <!-- Monoline leaf icon -->
+      <svg class="card-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M18,4 C9,10 7,20 18,28 C29,20 27,10 18,4Z"/>
+        <line x1="18" y1="4" x2="18" y2="32"/>
+        <line x1="18" y1="14" x2="12" y2="20"/>
+        <line x1="18" y1="14" x2="24" y2="20"/>
+      </svg>
+      <h2>Medicines</h2>
+      <p>Hapé, Sananga, and other traditional plant materials — sourced with care, offered by inquiry only.</p>
+      <a href="medicines.html" class="card-link">Explore medicines</a>
+    </div>
+
+    <div class="card">
+      <!-- Monoline compass/root icon -->
+      <svg class="card-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="18" cy="14" r="8"/>
+        <line x1="18" y1="22" x2="18" y2="34"/>
+        <line x1="14" y1="30" x2="18" y2="34"/>
+        <line x1="22" y1="30" x2="18" y2="34"/>
+        <line x1="18" y1="10" x2="18" y2="18"/>
+        <line x1="14" y1="14" x2="22" y2="14"/>
+      </svg>
+      <h2>Sourcing</h2>
+      <p>Every material comes with a conversation about where it came from, who harvested it, and how it was prepared.</p>
+      <a href="sourcing.html" class="card-link">Our approach</a>
+    </div>
+
+    <div class="card">
+      <!-- Monoline exchange/reciprocity icon -->
+      <svg class="card-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6,22 C6,16 10,12 18,12"/>
+        <path d="M30,14 C30,20 26,24 18,24"/>
+        <polyline points="14,8 18,12 14,16"/>
+        <polyline points="22,28 18,24 22,20"/>
+      </svg>
+      <h2>Reciprocity</h2>
+      <p>Access to these medicines carries responsibility. We explain how what flows out connects back to the people and places it came from.</p>
+      <a href="reciprocity.html" class="card-link">How access works</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="site-footer-wrap">
+    <div class="site-footer">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="our-story.html">Our Story</a>
+        <a href="medicines.html">Medicines</a>
+        <a href="sourcing.html">Sourcing</a>
+        <a href="reciprocity.html">Reciprocity</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav class="footer-nav footer-nav-legal" aria-label="Legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="refund-policy.html">Refund Policy</a>
+      </nav>
+      <p class="footer-legal">Information on this site is educational and spiritual in nature. It is not medical advice, diagnosis, treatment, or a promise of results. Offerings are available by inquiry only so sourcing, preparation, safety, and fit can be discussed with care.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sacred Tribal Alliance",
+  "url": "https://sta26.pages.dev",
+  "email": "sacredtribalalliance@gmail.com",
+  "description": "Traditional Hapé, Ambil, and Sananga offered by inquiry only — sourced with integrity from Amazonian knowledge-holders.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "email": "sacredtribalalliance@gmail.com"
+  }
+}
+</script>
+</body>
+</html>
